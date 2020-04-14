@@ -21,6 +21,3 @@ for strophe in range(5):
     print("{} SPAM, {} SPAM".format(el1, el2))  # {} sind platzhalter
     print()
 print()
-
-
-
