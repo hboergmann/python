@@ -15,13 +15,15 @@ def draw(p1, p2, m):
 
 
 breite, höhe = 900, 600
-θ1 = θ2 = pi / 2
+θ1 = θ2 = pi / 2  # Anfangswinkel in rad
 L1 = L2 = höhe // 3
 m1 = m2 = 10
+# Ableitungen
 θ1_1 = θ1_2 = θ2_1 = θ2_2 = 0
 g = 1.0
 
-aPos1 = (breite//2, höhe//3)
+aPos1 = (breite // 2, höhe // 3)
+# Endposition
 ePos1 = endPosBerechnen(aPos1, θ1, L1)
 aPos2 = ePos1
 ePos2 = endPosBerechnen(aPos2, θ2, L2)
