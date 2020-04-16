@@ -1,5 +1,6 @@
-from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
+from wordcloud import WordCloud, STOPWORDS
+
 
 with open("05_alice_in_wonderland.txt") as f:
     text = f.read()
