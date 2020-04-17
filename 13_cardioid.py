@@ -51,4 +51,4 @@ while weitermachen:
   pg.display.flip()
   pg.image.save(screen,f'Timetables{faktor}.png')
 
-pg.quit()
+#pg.quit()
