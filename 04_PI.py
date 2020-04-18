@@ -1,3 +1,4 @@
+# https://blogs.scientificamerican.com/sa-visual/the-boundless-beauty-of-pi/
 import turtle as tu
 
 lines = 500_000
@@ -7,6 +8,7 @@ with open("04_1_million_digits_of_pi.txt", "r") as f:
 
 tu.mode('logo')
 tu.tracer(False)
+
 tu.screensize(8000, 8000, 'black')
 tu.colormode(255)
 

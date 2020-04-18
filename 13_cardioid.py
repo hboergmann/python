@@ -49,6 +49,6 @@ while weitermachen:
   
   screen.blit(screen3,(3,10))
   pg.display.flip()
-  pg.image.save(screen,f'Timetables{faktor}.png')
+  # pg.image.save(screen,f'Timetables{faktor}.png')
 
 #pg.quit()
