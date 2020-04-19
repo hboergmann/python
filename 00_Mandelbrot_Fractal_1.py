@@ -39,4 +39,4 @@ for x in range(img.size[0]):
 # to display the created fractal after  
 # completing the given number of iterations 
 img.show()
-img.save(fraktal_1.png)
+img.save("fraktal_1","png")
