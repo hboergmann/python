@@ -15,7 +15,7 @@ def i2Pos(i):
   y = int(zy + radius * math.sin(winkel))
   return (x,y)
 
-pg.init()
+# pg.init()
 screen = pg.display.set_mode((breite, höhe))
 screen2 = pg.Surface((breite,höhe))
 farbe = pg.Color(150,150,150)
@@ -46,9 +46,8 @@ while weitermachen:
   
   screen3 = pg.font.SysFont('cour',82).render(f'{faktor:6.1f}',False,(farbe))
   #screen einstanzen
-  
   screen.blit(screen3,(3,10))
   pg.display.flip()
-  pg.image.save(screen,f'Timetables{faktor}.png')
+  # pg.image.save(screen,f'Timetables{faktor}.png')
 
-#pg.quit()
+pg.quit()
