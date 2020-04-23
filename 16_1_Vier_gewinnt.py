@@ -4,16 +4,18 @@ spielfeld = {}  # Key = (spalte, zeile), Value = 'O' oder 'X'
 SPALTEN = 7
 ZEILEN = 6
 ZELLEN = SPALTEN * ZEILEN
-RICHTUNGEN = [(-1, -1), (0, -1), (1, -1), (-1, 0),
-              (1, 0), (-1, 1), (0, 1), (1, 1)]
+# Richtungen
+RICHTUNGEN = [(-1, -1), (0, -1), (1, -1),
+              (-1, 0), (1, 0),
+              (-1, 1), (0, 1), (1, 1)]
 
 
 def findeTiefsteZeile(spalte):
   for zeile in reversed(range(ZEILEN)):
-    if (spalte, zeile) not in spielfeld:
+    if (spalte, zeile) not in spielfeld:  # nicht belegt
       return zeile
 
-
+# ist die Spalte voll? und vorhanden?
 def spalteGültig(spalte):
   if (spalte, 0) in spielfeld:
     return False
@@ -23,8 +25,8 @@ def spalteGültig(spalte):
 
 def printSpielfeld():
   for i in range(ZELLEN):
-    if i % SPALTEN == 0:
-      print()
+    if i % SPALTEN == 0:                # i geteilt durch Anzahl Spalten (7) ohne Rest
+      print()                           # Leerzeile
     pos = (i % SPALTEN, i // SPALTEN)
     if pos in spielfeld:
       print(spielfeld[pos], end=' ')
@@ -32,6 +34,7 @@ def printSpielfeld():
       print('.', end=' ')
   print()
 
+# Prüfung erfolgt in 8 Richtungen ob 4 Steine gesetzt
 def gewonnen(spieler):
   stein = 'O' if spieler else 'X'
   for pos in spielfeld:

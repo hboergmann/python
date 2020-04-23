@@ -9,12 +9,13 @@ RICHTUNGEN = [(-1, -1), (0, -1), (1, -1), (-1, 0),
               (1, 0), (-1, 1), (0, 1), (1, 1)]
 pos2Index = defaultdict(list)
 
+# quad sind vier Zellen in alle Richtungen
 def quadPositionen(pos, richtung):
   positionen = set()
   sp, ze = pos
   rsp, rze = richtung
-  neue_sp, neue_ze = sp + rsp*3, ze+rze*3
-  if neue_sp < 0 or neue_sp >= SPALTEN or neue_ze < 0 or neue_ze >= ZEILEN:
+  neue_sp, neue_ze = sp + rsp*3, ze+rze*3 # vom Ausgangspunkt aus 4 Felder weiter
+  if neue_sp < 0 or neue_sp >= SPALTEN or neue_ze < 0 or neue_ze >= ZEILEN: # im Spielfeld?
     return False
   for i in range(4):
     positionen.add((sp+rsp*i, ze+rze*i))
@@ -22,8 +23,8 @@ def quadPositionen(pos, richtung):
 
 def quadsErmitteln():
   zähler = 0
-  quads = {}
-  bekannte_positionen = set()
+  quads = {}  # leeres dictionary
+  bekannte_positionen = set() # Redundanzen ausfiltern
   for i in range(ZELLEN):
     for richtung in RICHTUNGEN:
       pos = (i % SPALTEN, i // SPALTEN)
