@@ -1,7 +1,7 @@
-import           sympy           as           sy
+import sympy as sy
 # Funktionsgleichung als String einlesen:
-parable_function_input = input("Bitte die Funktionsgleichung einer Parabel \
-                                eingeben (beispielsweise 3*x**2 - 5*x +7): ")
+print("Beispiel 3*x**2 - 5*x +7):")
+parable_function_input = input("Bitte die Funktionsgleichung einer Parabel eingeben: ")
 
 # Eingelesenen String in Sympy-Ausdruck umwandeln:
 parable_function = sy.S(parable_function_input)
