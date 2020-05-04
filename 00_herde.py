@@ -1,3 +1,8 @@
+# Ali Baba hat testamentarisch verfügt, dass seine Herde unter seinen sieben Kinder aufgeteilt wird
+# jedes Kind bekommt den Bruchteil der Schafe, die seinem Alter entsprechen.
+# Die Kinder sind alle unter 20 Jahre alt
+# z.B. ein 10-jähriger bekommt ein Zehntel
+# Die einzige Tochter erhält 24 Schafe
 lauf = True
 for a in range(2,14):
     for b in range(3,15):
@@ -13,4 +18,5 @@ for a in range(2,14):
                                 if (x==1 and lauf==True):
                                     print(str(a)+"->"+str(b)+"->"+str(c)+"->"+str(d)+"->"+str(e)+"->"+str(f)+"->"+str(g))
                                     lauf = False
+
                                 

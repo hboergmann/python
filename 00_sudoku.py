@@ -1,6 +1,7 @@
 import numpy as np
+import time
 
-grid = [[5,3,0,0,7,0,0,0,0],
+grid0 = [[5,3,0,0,7,0,0,0,0],
         [6,0,0,1,9,5,0,0,0],
         [0,9,8,0,0,0,0,6,0],
         [8,0,0,0,6,0,0,0,3],
@@ -29,6 +30,17 @@ grid2 = [[0, 0, 0, 0, 1, 0, 0, 0, 0],
          [7, 6, 0, 0, 0, 0, 0, 4, 8],
          [4, 0, 8, 0, 0, 0, 5, 0, 9],
          [0, 0, 0, 0, 7, 0, 0, 0, 0]]
+
+grid = [[0, 8, 0, 0, 2, 0, 5, 6, 0],
+        [0, 0, 0, 1, 0, 0, 0, 0, 7],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 5, 0, 0, 9, 0, 4, 0, 8],
+        [0, 0, 7, 8, 0, 0, 0, 0, 3],
+        [0, 9, 0, 0, 1, 0, 0, 5, 0],
+        [2, 0, 4, 0, 0, 0, 8, 0, 0],
+        [0, 6, 0, 0, 8, 5, 0, 0, 0],
+        [0, 0, 0, 2, 0, 0, 1, 0, 0]]
+     
 
 # Funktion prüft, in der Reihe oder Spalte oder 
 # im 3 mal 3 Quadrat die Ziffer n schon vorhanden ist
@@ -64,11 +76,13 @@ def solve():
                         solve()             # erneuter Aufruf (rekursion)
                         grid[y][x] = 0      # keine Ziffer gefunden
                 return                      # Rücksprung
+    print(time.perf_counter()-start)
     print(np.matrix(grid))                  # 1. Lösung ausgeben
     input("More?")                          # Weitere Lösungen suchen
 
 # print(np.matrix(grid))
 print()
+start = time.perf_counter()
 solve()
 
 

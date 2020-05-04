@@ -1,4 +1,5 @@
 # ägyptischer_bruch (nach Fibonachi)
+# jeder beliebige bruch läßt such aus der Summe von Stammbrüchen darstellen
 # siehe auch Bleicher
 from fractions import Fraction
 def greedy(x,forceOdd = False):

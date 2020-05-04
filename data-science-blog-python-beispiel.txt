@@ -1,0 +1,21 @@
+ID|Standort|Funktion|Mitarbeiter|Umsatz|Kosten
+1|Muenchen|Verwaltung + Vertrieb|45|3500000|2300000 
+2|Stuttgart|Nur Vertrieb|23|2800000|800000 
+3|Hannover|Verwaltung + Vertrieb|45|1800000|1000000 
+4|Leipzig|Nur Vertrieb|12|1000000|320000 
+5|Dresden|Produktio + Vertrieb|65|450000|700000 
+6|Frankfurt am Main|Nur Vertrieb|12|240000|20000 
+7|Duesseldorf|Nur Vertrieb|43|45000|53000 
+8|Kassel|Nur Vertrieb|23|250000|90000 
+9|Hamburg|Verwaltung + Vertrieb|89|2800000|690000 
+10|Koeln|Nur Vertrieb|21|110000|12000 
+11|Potsdam|Nur Vertrieb|12|20000|67000 
+12|Nuernberg|Nur Vertrieb|15|60000|30000 
+13|Ingolstadt|Nur Vertrieb|8|80000|10000 
+14|Wolfsburg|Nur Vertrieb|8|90000|23000 
+15|Braunschweig|Nur Vertrieb|32|900000|750000 
+16|Augsburg|Verwaltung + Vertrieb|45|700000|370000 
+17|Chemnitz|Nur Vertrieb|4|95000|78000 
+18|Bochum|Nur Vertrieb|9|32000|67000 
+19|Dortmund|Produktio + Vertrieb|56|2100000|450000
+20|Essen|Nur Vertrieb|10|190000|140000

@@ -89,7 +89,8 @@ def print_board():
 
 start = time.perf_counter()
 leeres_sudoku_erstellen()
-sudoku_einlesen('5......1....4..2...8.2......2....6......3..7.....1....1.3....5....6..4..7........')
+# sudoku_einlesen('5......1....4..2...8.2......2....6......3..7.....1....1.3....5....6..4..7........')
+sudoku_einlesen('.8..2.56....1....7..........5..9.4.8..78....3.9..1..5.2.4...8...6..85......2..1..')
 löse()
 print(time.perf_counter()-start)
 print_board()
