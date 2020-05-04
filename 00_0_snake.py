@@ -131,4 +131,4 @@ while go:
             ende = False
             score = 0
     
-    clock.tick(5)
+    clock.tick(8)
