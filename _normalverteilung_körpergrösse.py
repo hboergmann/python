@@ -14,7 +14,8 @@ mu, sigma = 170, 8
 x = mu + sigma * np.random.randn(10000)
  
 # Histogramm zeichnen
-plt.hist(x, 100, normed=True, alpha=0.75)
+# plt.hist(x, 100, normed=True, alpha=0.75)
+plt.hist(x, 100, density = True, alpha=0.75)
 
 # Sichbaren Bereich festlegen
 plt.axis([140, 200, 0, 0.06])
